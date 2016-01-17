@@ -1,6 +1,6 @@
 #include <lua.h>
 #include <lauxlib.h>
-#include <hiredis.h>
+#include "lua_redis.h"
 
 typedef enum { false, true } bool;
 #define NO_INDEXES 1
