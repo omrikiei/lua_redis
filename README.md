@@ -8,16 +8,18 @@ lua_redis is a C binding between hiredis and lua, intended to provide a fast and
 
 ```
 redis = require("lua_redis")
-instance = redis.connect("test", {["ip"] = "127.0.0.1"}) --'test' is the name of the connection instance, you can pass a table with connection parameters
+instance = redis.connect("test", {["ip"] = "127.0.0.1"})
+--'test' is the name of the connection instance, you can pass a table with connection parameters
 ```
 ### Commands
-
+```
 value = "str value"
-instance.set("key", value) --then you can call the command from the instance, you can either pass multiple parameters or a concatenated expression.
+instance.set("key", value) 
+-- you can call the commands from the instance, you can either pass multiple parameters or a concatenated expression.
 instance.get("key")
 instance.hset("hash key value")
 instance.hgetall("hash")
-
+```
 ## Motivation
 
 This module should be quite fast(pre-compiled with static hiredis) and it is an excellent experience in binding lua and C for a usefull purpose. Additionally, it provides multiple concurrent connection instances.
