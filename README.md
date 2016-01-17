@@ -28,7 +28,9 @@ This module should be quite fast(pre-compiled with static hiredis) and it is an 
 The build depends on hiredis being installed on the compiling system.
 
 with luarocks:
+```
 luarocks install lua_redis HIREDIS_DIR=/path/to/hiredis/lib HIREDIS_INCDIR=/path/to/hiredis/include/
+```
 
 ## Tests:
 
