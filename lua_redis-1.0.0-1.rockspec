@@ -1,7 +1,8 @@
 package = "lua_redis"
 version = "1.0.0-1"
 source = {
-  url = ""
+  url = "https://github.com/omrikiei/lua_redis",
+  tag = "v0.1"
 }
 description = {
   summary = "A hiredis binding for lua, supporting multiple concurrent connection instances",
@@ -50,6 +51,5 @@ build = {
   install = {
     lib = { "src/redislib.so" },
     lua = { "src/lua_redis.lua", "src/luaredis_connection.lua", "src/luaredis_connector.lua", "src/luaredis_commands.lua" },
-  },
-  copy_files = { "src/redislib.so" }
+  }
 }
