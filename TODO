@@ -1,4 +1,5 @@
 TODO:
-- Write more extensive tests, include pubsub.
+- pubsub support!
+- Write more extensive tests.
 - Test con.nection with local socket.
 - Benchmark performance.
