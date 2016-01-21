@@ -1,4 +1,5 @@
 TODO:
+- lua 5.2 support
 - pubsub support!
 - Write more extensive tests.
 - Test con.nection with local socket.
